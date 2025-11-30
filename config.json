@@ -1,0 +1,73 @@
+{
+  "default_language": "pt_BR",
+  "automod": {
+    "enabled": true,
+    "spam": {
+      "enabled": true,
+      "max_messages": 5,
+      "time_window": 5,
+      "action": "mute",
+      "duration": 300
+    },
+    "links": {
+      "enabled": true,
+      "whitelist": [],
+      "blacklist": [],
+      "action": "warn"
+    },
+    "invites": {
+      "enabled": true,
+      "whitelist": [],
+      "action": "delete"
+    },
+    "bad_words": {
+      "enabled": true,
+      "words": [],
+      "action": "warn"
+    },
+    "attachments": {
+      "enabled": false,
+      "max_size_mb": 8,
+      "blocked_extensions": [".exe", ".bat", ".cmd", ".scr"],
+      "action": "delete"
+    }
+  },
+  "anti_raid": {
+    "enabled": true,
+    "join_threshold": 10,
+    "time_window": 60,
+    "auto_lockdown": true
+  },
+  "anti_nuke": {
+    "enabled": true,
+    "channel_threshold": 5,
+    "role_threshold": 5,
+    "time_window": 60
+  },
+  "escalation": {
+    "enabled": true,
+    "levels": [
+      {"infractions": 1, "action": "warn"},
+      {"infractions": 2, "action": "mute", "duration": 3600},
+      {"infractions": 3, "action": "tempban", "duration": 86400},
+      {"infractions": 5, "action": "ban"}
+    ]
+  },
+  "logging": {
+    "enabled": true,
+    "log_channel_id": null,
+    "log_actions": true,
+    "log_automod": true,
+    "log_edits": false,
+    "log_deletes": false
+  },
+  "permissions": {
+    "mod_role_id": null,
+    "admin_role_id": null,
+    "check_hierarchy": true
+  },
+  "messages": {
+    "dm_on_action": true,
+    "include_appeal_info": true
+  }
+}
