@@ -378,5 +378,4 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 ---
 
 **Desenvolvido com ❤️ para a comunidade Discord**
-#   b o t - m o d e r  
- 
+#
